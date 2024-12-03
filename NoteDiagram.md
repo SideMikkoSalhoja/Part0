@@ -4,7 +4,7 @@ sequenceDiagram
     participant server
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-    Payload: { note: "from visual" }
+    Payload: [{ note: "from visual" }]
     activate server
     server-->>browser: 302 Redirect to /exampleapp/notes
     deactivate server
